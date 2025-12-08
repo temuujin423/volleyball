@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temuujingiin durtai top10 toglogchid</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-content">
+          <h1>🏐 Тэмүүжингийн дуртай ТОП15 тоглогч</h1>
+          <p>Explore and discover talented volleyball players from Japan</p>
+        </div>
+      </header>
+
+      <!-- Search and Filter Section -->
+      <div class="search-section">
+        <div class="search-box">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search by name or club..."
+            class="search-input"
+          />
+          <button class="search-btn">🔍 Search</button>
+        </div>
+
+        <div class="filters">
+          <div class="filter-group">
+            <label for="positionFilter">Position:</label>
+            <select id="positionFilter" class="filter-select">
+              <option value="">All Positions</option>
+              <option value="Setter">Setter</option>
+              <option value="Outside Hitter">Outside Hitter</option>
+              <option value="Middle Blocker">Middle Blocker</option>
+              <option value="Libero">Libero</option>
+              <option value="Opposite">Opposite</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="teamFilter">Team:</label>
+            <select id="teamFilter" class="filter-select">
+              <option value="">All Teams</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="genderFilter">Gender:</label>
+            <select id="genderFilter" class="filter-select">
+              <option value="">All</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+
+          <button id="resetBtn" class="reset-btn">Reset Filters</button>
+        </div>
+      </div>
+
+      <!-- Players Grid -->
+      <div class="players-section">
+        <div class="players-info">
+          <h2>Players</h2>
+          <p id="playerCount">Total: 0 players</p>
+        </div>
+        <div id="playersGrid" class="players-grid">
+          <!-- Players will be loaded here -->
+        </div>
+      </div>
+
+      <!-- Player Detail Modal -->
+      <div id="playerModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div id="playerDetail" class="player-detail">
+            <!-- Player details will be loaded here -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; Тэмүүжингийн ТОП15 тоглогчид</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
